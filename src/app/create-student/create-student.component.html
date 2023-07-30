@@ -1,0 +1,59 @@
+<div class="app-wrapper">
+
+  <div class="app-content pt-3 p-md-3 p-lg-4">
+    <div class="container-xl">
+
+
+      <div class="row g-3 mb-4 align-items-center justify-content-between mt-5">
+        <div class="col-auto">
+          <h1 class="app-page-title mb-0">STUDENTS</h1>
+        </div>
+        <div class="col-auto">
+          <div class="page-utilities">
+            <div class="row g-2 justify-content-start justify-content-md-end align-items-center">
+
+
+              <div class="col-auto">
+                <a class="btn app-btn-secondary" [routerLink]="['/student']">
+
+                  Cancel
+                </a>
+              </div>
+            </div><!--//row-->
+          </div><!--//table-utilities-->
+        </div><!--//col-auto-->
+      </div><!--//row-->
+
+      <div class="tab-content" id="orders-table-tab-content">
+        <div class="tab-pane fade show active" id="orders-all" role="tabpanel" aria-labelledby="orders-all-tab">
+          <div class="app-card app-card-orders-table shadow-sm mb-5">
+            <div class="app-card-body">
+
+              <div class="p-3">
+                <div class="email mb-3">
+                  <label class="sr-only" for="signup-email">Name </label>
+                  <input id="signup-name" name="signup-name" type="text" class="form-control signup-name"
+                    placeholder="Full name" required="required">
+                </div>
+                <div class="email mb-3">
+                  <label class="sr-only" for="signup-email"> Email</label>
+                  <input id="signup-email" name="signup-email" type="email" class="form-control signup-email"
+                    placeholder="Email" required="required">
+                </div>
+                <div class="password mb-3">
+                  <label class="sr-only" for="signup-password">Age </label>
+                  <input id="signup-password" name="signup-password" type="password"
+                    class="form-control signup-password" placeholder="Age " required="required">
+                </div>
+
+              </div>
+              <div class="text-center">
+                <button (click)="createStudent()" type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto">Creeate </button>
+              </div>
+            </div><!--//app-card-body-->
+          </div><!--//app-card-->
+        </div><!--//tab-pane-->
+
+      </div>
+    </div>
+  </div>
