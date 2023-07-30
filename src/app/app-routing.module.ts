@@ -9,6 +9,7 @@ import { EnrolmentComponent } from './enrolment/enrolment.component';
 import { AccountComponent } from './account/account.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { AuthGuard } from './guard/auth.guard';
+import { CreateSubjetComponent } from './create-subjet/create-subjet.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,8 @@ const routes: Routes = [
   { path: 'enrolment', component: EnrolmentComponent },
   { path: 'account', component: AccountComponent },
   { path: 'create-student', component: CreateStudentComponent },
+  { path: 'edit-student/:id', component: CreateStudentComponent },
+  { path: 'create-subjet', component: CreateSubjetComponent },
 
 ];
 

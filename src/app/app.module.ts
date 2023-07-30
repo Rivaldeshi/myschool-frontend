@@ -13,6 +13,7 @@ import { StudentComponent } from './student/student.component';
 import { EnrolmentComponent } from './enrolment/enrolment.component';
 import { AccountComponent } from './account/account.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
+import { CreateSubjetComponent } from './create-subjet/create-subjet.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CreateStudentComponent } from './create-student/create-student.componen
     StudentComponent,
     EnrolmentComponent,
     AccountComponent,
-    CreateStudentComponent
+    CreateStudentComponent,
+    CreateSubjetComponent
   ],
   imports: [
     FormsModule,

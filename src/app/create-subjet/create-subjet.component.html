@@ -32,24 +32,20 @@
               <div class="p-3">
                 <div class="email mb-3">
                   <label class="sr-only" >Name </label>
-                  <input id="signup-name" [(ngModel)]="Student.name"  type="text" class="form-control signup-name"
-                    placeholder="Full name" required="required">
+                  <input id="signup-name" [(ngModel)]="Subjet.name"  type="text" class="form-control signup-name"
+                    placeholder="Subjet Title" required="required">
                 </div>
 
                 <div class="email mb-3">
-                  <label class="sr-only" > Email</label>
-                  <input id="signup-email" [(ngModel)]="Student.email" class="form-control signup-email"
-                    placeholder="Email" required="required">
+                  <label class="sr-only" > description</label>
+                  <input id="signup-email" [(ngModel)]="Subjet.description" class="form-control signup-email"
+                    placeholder="Subjet Description" required="required">
                 </div>
-                <div class="password mb-3">
-                  <label class="sr-only" for="signup-password">Age </label>
-                  <input id="signup-password" [(ngModel)]="Student.age"  type="text"
-                    class="form-control signup-password" placeholder="Age " required="required">
-                </div>
+
 
               </div>
               <div class="text-center">
-                <button (click)="createStudent()" type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto">Creeate </button>
+                <button (click)="createSubjet()" type="submit" class="btn app-btn-primary w-100 theme-btn mx-auto">Creeate </button>
               </div>
             </div><!--//app-card-body-->
           </div><!--//app-card-->
